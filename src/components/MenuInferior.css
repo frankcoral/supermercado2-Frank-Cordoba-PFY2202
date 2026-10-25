@@ -1,0 +1,45 @@
+.menu-inferior {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-height: 70px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  background-color: #166534;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+
+.menu-inferior a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.menu-inferior a:hover {
+  background-color: #15803d;
+}
+
+.menu-inferior a.active {
+  background-color: #14532d;
+  font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .menu-inferior {
+    gap: 4px;
+  }
+
+  .menu-inferior a {
+    font-size: 13px;
+    padding: 10px 6px;
+  }
+}
